@@ -1,0 +1,1888 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BloxxyAnimationsHub = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Mainscript = Instance.new("ScrollingFrame")
+local Buttons = Instance.new("Folder")
+local BarrelRollResetToStop = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local BowDownResetToStop = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local CrawlResetToStop = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local CrouchResetToStop = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local DabResetToStop = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local FaintResetToStop = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local FloatingHeadResetToStop = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local FloatingSitResetToStop = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local HappyDanceResetToStop = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local InsaneResetToStop = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local ArmsOutResetToStop = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local LevitateResetToStop = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local MoonDanceResetToStop = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local MovingDanceResetToStop = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local PunchResetToStop = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SlapResetToStop = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local SpinAttackResetToStop = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local SpinDanceResetToStop = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local SpinResetToStop = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local InvisibleResetToStop = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local CloneResetToStop = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local HeadThrowResetToStop = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local RevizAdminResetToStop = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Elements = Instance.new("Folder")
+local Credits = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local UICorner_24 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local KeybindInfo = Instance.new("TextLabel")
+local Normo = Instance.new("TextLabel")
+local Elements_2 = Instance.new("Folder")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_25 = Instance.new("UICorner")
+local UICorner_26 = Instance.new("UICorner")
+
+--Properties:
+
+BloxxyAnimationsHub.Name = "Bloxxy Animations Hub"
+BloxxyAnimationsHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BloxxyAnimationsHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BloxxyAnimationsHub.ResetOnSpawn = false
+
+Frame.Parent = BloxxyAnimationsHub
+Frame.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.327715307, 0, 0.18313688, 0)
+Frame.Size = UDim2.new(0, 372, 0, 609)
+
+Mainscript.Name = "Main script"
+Mainscript.Parent = Frame
+Mainscript.Active = true
+Mainscript.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Mainscript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainscript.BorderSizePixel = 0
+Mainscript.Position = UDim2.new(0.0241935477, 0, 0.0199001674, 0)
+Mainscript.Size = UDim2.new(0, 353, 0, 579)
+Mainscript.CanvasPosition = Vector2.new(0, 1800)
+Mainscript.CanvasSize = UDim2.new(0, 0, 6, 0)
+Mainscript.ScrollBarThickness = 6
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Mainscript
+
+BarrelRollResetToStop.Name = "Barrel Roll (Reset To Stop)"
+BarrelRollResetToStop.Parent = Buttons
+BarrelRollResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+BarrelRollResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+BarrelRollResetToStop.BorderSizePixel = 0
+BarrelRollResetToStop.Position = UDim2.new(0.194227502, 0, 0.0450867228, 0)
+BarrelRollResetToStop.Size = UDim2.new(0, 200, 0, 50)
+BarrelRollResetToStop.Font = Enum.Font.SourceSans
+BarrelRollResetToStop.Text = "Barrel Roll (Reset To Stop)"
+BarrelRollResetToStop.TextColor3 = Color3.new(0, 0, 0)
+BarrelRollResetToStop.TextSize = 14
+BarrelRollResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "136801964"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+UICorner.Parent = BarrelRollResetToStop
+
+BowDownResetToStop.Name = "Bow Down (Reset To Stop)"
+BowDownResetToStop.Parent = Buttons
+BowDownResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+BowDownResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+BowDownResetToStop.BorderSizePixel = 0
+BowDownResetToStop.Position = UDim2.new(0.194227502, 0, 0.0712553784, 0)
+BowDownResetToStop.Size = UDim2.new(0, 200, 0, 50)
+BowDownResetToStop.Font = Enum.Font.SourceSans
+BowDownResetToStop.Text = "Bow Down (Reset To Stop)"
+BowDownResetToStop.TextColor3 = Color3.new(0, 0, 0)
+BowDownResetToStop.TextSize = 14
+BowDownResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "204292303"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_2.Parent = BowDownResetToStop
+
+CrawlResetToStop.Name = "Crawl (Reset To Stop)"
+CrawlResetToStop.Parent = Buttons
+CrawlResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+CrawlResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+CrawlResetToStop.BorderSizePixel = 0
+CrawlResetToStop.Position = UDim2.new(0.194020838, 0, 0.0956322551, 0)
+CrawlResetToStop.Size = UDim2.new(0, 200, 0, 50)
+CrawlResetToStop.Font = Enum.Font.SourceSans
+CrawlResetToStop.Text = "Crawl (Reset To Stop)"
+CrawlResetToStop.TextColor3 = Color3.new(0, 0, 0)
+CrawlResetToStop.TextSize = 14
+CrawlResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "282574440"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_3.Parent = CrawlResetToStop
+
+CrouchResetToStop.Name = "Crouch (Reset To Stop)"
+CrouchResetToStop.Parent = Buttons
+CrouchResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+CrouchResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+CrouchResetToStop.BorderSizePixel = 0
+CrouchResetToStop.Position = UDim2.new(0.196853682, 0, 0.119018018, 0)
+CrouchResetToStop.Size = UDim2.new(0, 200, 0, 50)
+CrouchResetToStop.Font = Enum.Font.SourceSans
+CrouchResetToStop.Text = "Crouch (Reset To Stop)"
+CrouchResetToStop.TextColor3 = Color3.new(0, 0, 0)
+CrouchResetToStop.TextSize = 14
+CrouchResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "182724289"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+UICorner_4.Parent = CrouchResetToStop
+
+DabResetToStop.Name = "Dab (Reset To Stop)"
+DabResetToStop.Parent = Buttons
+DabResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+DabResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+DabResetToStop.BorderSizePixel = 0
+DabResetToStop.Position = UDim2.new(0.193814173, 0, 0.144943535, 0)
+DabResetToStop.Size = UDim2.new(0, 200, 0, 50)
+DabResetToStop.Font = Enum.Font.SourceSans
+DabResetToStop.Text = "Dab (Reset To Stop)"
+DabResetToStop.TextColor3 = Color3.new(0, 0, 0)
+DabResetToStop.TextSize = 14
+DabResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "248263260"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+UICorner_5.Parent = DabResetToStop
+
+FaintResetToStop.Name = "Faint (Reset To Stop)"
+FaintResetToStop.Parent = Buttons
+FaintResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+FaintResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+FaintResetToStop.BorderSizePixel = 0
+FaintResetToStop.Position = UDim2.new(0.191187993, 0, 0.169747666, 0)
+FaintResetToStop.Size = UDim2.new(0, 200, 0, 50)
+FaintResetToStop.Font = Enum.Font.SourceSans
+FaintResetToStop.Text = "Faint (Reset To Stop)"
+FaintResetToStop.TextColor3 = Color3.new(0, 0, 0)
+FaintResetToStop.TextSize = 14
+FaintResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "181525546"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_6.Parent = FaintResetToStop
+
+FloatingHeadResetToStop.Name = "Floating Head (Reset To Stop)"
+FloatingHeadResetToStop.Parent = Buttons
+FloatingHeadResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+FloatingHeadResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+FloatingHeadResetToStop.BorderSizePixel = 0
+FloatingHeadResetToStop.Position = UDim2.new(0.191187993, 0, 0.196974859, 0)
+FloatingHeadResetToStop.Size = UDim2.new(0, 200, 0, 50)
+FloatingHeadResetToStop.Font = Enum.Font.SourceSans
+FloatingHeadResetToStop.Text = "Floating Head  (Reset To Stop)"
+FloatingHeadResetToStop.TextColor3 = Color3.new(0, 0, 0)
+FloatingHeadResetToStop.TextSize = 14
+FloatingHeadResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "121572214"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play(0)
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_7.Parent = FloatingHeadResetToStop
+
+FloatingSitResetToStop.Name = "Floating Sit (Reset To Stop)"
+FloatingSitResetToStop.Parent = Buttons
+FloatingSitResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+FloatingSitResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+FloatingSitResetToStop.BorderSizePixel = 0
+FloatingSitResetToStop.Position = UDim2.new(0.191187993, 0, 0.226383567, 0)
+FloatingSitResetToStop.Size = UDim2.new(0, 200, 0, 50)
+FloatingSitResetToStop.Font = Enum.Font.SourceSans
+FloatingSitResetToStop.Text = "Floating  Sit (Reset To Stop)"
+FloatingSitResetToStop.TextColor3 = Color3.new(0, 0, 0)
+FloatingSitResetToStop.TextSize = 14
+FloatingSitResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "179224234"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_8.Parent = FloatingSitResetToStop
+
+HappyDanceResetToStop.Name = "Happy Dance  (Reset To Stop)"
+HappyDanceResetToStop.Parent = Buttons
+HappyDanceResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+HappyDanceResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+HappyDanceResetToStop.BorderSizePixel = 0
+HappyDanceResetToStop.Position = UDim2.new(0.190774649, 0, 0.255874991, 0)
+HappyDanceResetToStop.Size = UDim2.new(0, 200, 0, 50)
+HappyDanceResetToStop.Font = Enum.Font.SourceSans
+HappyDanceResetToStop.Text = "Happy Dance (Reset To Stop)"
+HappyDanceResetToStop.TextColor3 = Color3.new(0, 0, 0)
+HappyDanceResetToStop.TextSize = 14
+HappyDanceResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "45834924"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+UICorner_9.Parent = HappyDanceResetToStop
+
+InsaneResetToStop.Name = "Insane  (Reset To Stop)"
+InsaneResetToStop.Parent = Buttons
+InsaneResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+InsaneResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+InsaneResetToStop.BorderSizePixel = 0
+InsaneResetToStop.Position = UDim2.new(0.190774649, 0, 0.28352192, 0)
+InsaneResetToStop.Size = UDim2.new(0, 200, 0, 50)
+InsaneResetToStop.Font = Enum.Font.SourceSans
+InsaneResetToStop.Text = "Insane (Reset To Stop)"
+InsaneResetToStop.TextColor3 = Color3.new(0, 0, 0)
+InsaneResetToStop.TextSize = 14
+InsaneResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "33796059"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(25)
+end)
+
+UICorner_10.Parent = InsaneResetToStop
+
+ArmsOutResetToStop.Name = "ArmsOut  (Reset To Stop)"
+ArmsOutResetToStop.Parent = Buttons
+ArmsOutResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+ArmsOutResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+ArmsOutResetToStop.BorderSizePixel = 0
+ArmsOutResetToStop.Position = UDim2.new(0.194227591, 0, 0.0201163571, 0)
+ArmsOutResetToStop.Size = UDim2.new(0, 200, 0, 50)
+ArmsOutResetToStop.Font = Enum.Font.SourceSans
+ArmsOutResetToStop.Text = "ArmsOut (Reset To Stop)"
+ArmsOutResetToStop.TextColor3 = Color3.new(0, 0, 0)
+ArmsOutResetToStop.TextSize = 14
+ArmsOutResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "27432691"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+UICorner_11.Parent = ArmsOutResetToStop
+
+LevitateResetToStop.Name = "Levitate  (Reset To Stop)"
+LevitateResetToStop.Parent = Buttons
+LevitateResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+LevitateResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+LevitateResetToStop.BorderSizePixel = 0
+LevitateResetToStop.Position = UDim2.new(0.190774634, 0, 0.310348988, 0)
+LevitateResetToStop.Size = UDim2.new(0, 200, 0, 50)
+LevitateResetToStop.Font = Enum.Font.SourceSans
+LevitateResetToStop.Text = "Levitate  (Reset To Stop)"
+LevitateResetToStop.TextColor3 = Color3.new(0, 0, 0)
+LevitateResetToStop.TextSize = 14
+LevitateResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "313762630"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_12.Parent = LevitateResetToStop
+
+MoonDanceResetToStop.Name = "Moon Dance  (Reset To Stop)"
+MoonDanceResetToStop.Parent = Buttons
+MoonDanceResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+MoonDanceResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+MoonDanceResetToStop.BorderSizePixel = 0
+MoonDanceResetToStop.Position = UDim2.new(0.18227604, 0, 0.335502416, 0)
+MoonDanceResetToStop.Size = UDim2.new(0, 200, 0, 50)
+MoonDanceResetToStop.Font = Enum.Font.SourceSans
+MoonDanceResetToStop.Text = "Moon Dance  (Reset To Stop)"
+MoonDanceResetToStop.TextColor3 = Color3.new(0, 0, 0)
+MoonDanceResetToStop.TextSize = 14
+MoonDanceResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "45834924"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_13.Parent = MoonDanceResetToStop
+
+MovingDanceResetToStop.Name = "Moving Dance  (Reset To Stop)"
+MovingDanceResetToStop.Parent = Buttons
+MovingDanceResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+MovingDanceResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+MovingDanceResetToStop.BorderSizePixel = 0
+MovingDanceResetToStop.Position = UDim2.new(0.18227604, 0, 0.357939214, 0)
+MovingDanceResetToStop.Size = UDim2.new(0, 200, 0, 50)
+MovingDanceResetToStop.Font = Enum.Font.SourceSans
+MovingDanceResetToStop.Text = "Moving Dance  (Reset To Stop)"
+MovingDanceResetToStop.TextColor3 = Color3.new(0, 0, 0)
+MovingDanceResetToStop.TextSize = 14
+MovingDanceResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "429703734"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_14.Parent = MovingDanceResetToStop
+
+PunchResetToStop.Name = "Punch  (Reset To Stop)"
+PunchResetToStop.Parent = Buttons
+PunchResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+PunchResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+PunchResetToStop.BorderSizePixel = 0
+PunchResetToStop.Position = UDim2.new(0.18227604, 0, 0.381157607, 0)
+PunchResetToStop.Size = UDim2.new(0, 200, 0, 50)
+PunchResetToStop.Font = Enum.Font.SourceSans
+PunchResetToStop.Text = "Punch  (Reset To Stop)"
+PunchResetToStop.TextColor3 = Color3.new(0, 0, 0)
+PunchResetToStop.TextSize = 14
+PunchResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "126753849"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_15.Parent = PunchResetToStop
+
+SlapResetToStop.Name = "Slap  (Reset To Stop)"
+SlapResetToStop.Parent = Buttons
+SlapResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+SlapResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+SlapResetToStop.BorderSizePixel = 0
+SlapResetToStop.Position = UDim2.new(0.18227604, 0, 0.403300613, 0)
+SlapResetToStop.Size = UDim2.new(0, 200, 0, 50)
+SlapResetToStop.Font = Enum.Font.SourceSans
+SlapResetToStop.Text = "Slap (Reset To Stop)"
+SlapResetToStop.TextColor3 = Color3.new(0, 0, 0)
+SlapResetToStop.TextSize = 14
+SlapResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "204062532"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_16.Parent = SlapResetToStop
+
+SpinAttackResetToStop.Name = "Spin Attack  (Reset To Stop)"
+SpinAttackResetToStop.Parent = Buttons
+SpinAttackResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+SpinAttackResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+SpinAttackResetToStop.BorderSizePixel = 0
+SpinAttackResetToStop.Position = UDim2.new(0.18227604, 0, 0.424875438, 0)
+SpinAttackResetToStop.Size = UDim2.new(0, 200, 0, 50)
+SpinAttackResetToStop.Font = Enum.Font.SourceSans
+SpinAttackResetToStop.Text = "Spin Attack  (Reset To Stop)"
+SpinAttackResetToStop.TextColor3 = Color3.new(0, 0, 0)
+SpinAttackResetToStop.TextSize = 14
+SpinAttackResetToStop.MouseButton1Down:connect(function()
+	local Victim='Player name here'
+	local A=Instance.new'Animation'
+	A.AnimationId='rbxassetid://429730430'
+	local P=game:GetService'Players'.LocalPlayer
+	local C=P.Character or P.CharacterAdded:Wait()
+	local H=C:WaitForChild'Humanoid':LoadAnimation(A)
+	H:Play()
+	H:AdjustSpeed(2.5)
+	game:GetService'RunService'.Stepped:Connect(function()
+		C:WaitForChild'HumanoidRootPart'.CFrame=CFrame.new(game:GetService'Players':FindFirstChild(Victim).Character:WaitForChild'HumanoidRootPart'.Position)
+	end)
+end)
+
+
+UICorner_17.Parent = SpinAttackResetToStop
+
+SpinDanceResetToStop.Name = "Spin Dance  (Reset To Stop)"
+SpinDanceResetToStop.Parent = Buttons
+SpinDanceResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+SpinDanceResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+SpinDanceResetToStop.BorderSizePixel = 0
+SpinDanceResetToStop.Position = UDim2.new(0.18227604, 0, 0.447041184, 0)
+SpinDanceResetToStop.Size = UDim2.new(0, 200, 0, 50)
+SpinDanceResetToStop.Font = Enum.Font.SourceSans
+SpinDanceResetToStop.Text = "Spin Dance  (Reset To Stop)"
+SpinDanceResetToStop.TextColor3 = Color3.new(0, 0, 0)
+SpinDanceResetToStop.TextSize = 14
+SpinDanceResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "429730430"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_18.Parent = SpinDanceResetToStop
+
+SpinResetToStop.Name = "Spin  (Reset To Stop)"
+SpinResetToStop.Parent = Buttons
+SpinResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+SpinResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+SpinResetToStop.BorderSizePixel = 0
+SpinResetToStop.Position = UDim2.new(0.18227604, 0, 0.470973551, 0)
+SpinResetToStop.Size = UDim2.new(0, 200, 0, 50)
+SpinResetToStop.Font = Enum.Font.SourceSans
+SpinResetToStop.Text = "Spin  (Reset To Stop)"
+SpinResetToStop.TextColor3 = Color3.new(0, 0, 0)
+SpinResetToStop.TextSize = 14
+SpinResetToStop.MouseButton1Down:connect(function()
+	AnimationId = "188632011"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play()
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_19.Parent = SpinResetToStop
+
+InvisibleResetToStop.Name = "Invisible  (Reset To Stop)"
+InvisibleResetToStop.Parent = Buttons
+InvisibleResetToStop.BackgroundColor3 = Color3.new(1, 1, 1)
+InvisibleResetToStop.BorderColor3 = Color3.new(0, 0, 0)
+InvisibleResetToStop.BorderSizePixel = 0
+InvisibleResetToStop.Position = UDim2.new(0.1624455, 0, 0.495533317, 0)
+InvisibleResetToStop.Size = UDim2.new(0, 223, 0, 50)
+InvisibleResetToStop.Font = Enum.Font.SourceSans
+InvisibleResetToStop.Text = "Invisible (You Will See Urself, Reset To Stop)"
+InvisibleResetToStop.TextColor3 = Color3.new(0, 0, 0)
+InvisibleResetToStop.TextSize = 14
+InvisibleResetToStop.MouseButton1Down:connect(function()
+	Local = game:GetService('Players').LocalPlayer
+	Char  = Local.Character
+	touched,tpdback = false, false
+	Local.CharacterAdded:connect(function(char)
+		if script.Disabled ~= true then
+			wait(.25)
+			loc = Char.HumanoidRootPart.Position
+			Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+		end
+	end)
+	game:GetService('UserInputService').InputBegan:connect(function(key)
+		if key.KeyCode == Enum.KeyCode.Equals then
+			if script.Disabled ~= true then
+				script.Disabled = true
+				print'you may re-execute'
+			end
+		end
+	end)
+	box = Instance.new('Part',workspace)
+	box.Anchored = true
+	box.CanCollide = true
+	box.Size = Vector3.new(10,1,10)
+	box.Position = Vector3.new(0,10000,0)
+	box.Touched:connect(function(part)
+		if (part.Parent.Name == Local.Name) then
+			if touched == false then
+				touched = true
+				function apply()
+					if script.Disabled ~= true then
+						no = Char.HumanoidRootPart:Clone()
+						wait(.25)
+						Char.HumanoidRootPart:Destroy()
+						no.Parent = Char
+						Char:MoveTo(loc)
+						touched = false
+					end end
+				if Char then
+					apply()
+				end
+			end
+		end
+	end)
+	repeat wait() until Char
+	loc = Char.HumanoidRootPart.Position
+	Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+end)
+
+
+UICorner_20.Parent = InvisibleResetToStop
+
+
+CloneResetToStop.Name = "Clone  (Reset To Stop)"
+CloneResetToStop.Parent = Buttons
+CloneResetToStop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloneResetToStop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloneResetToStop.BorderSizePixel = 0
+CloneResetToStop.Position = UDim2.new(0.176610321, 0, 0.543555558, 0)
+CloneResetToStop.Size = UDim2.new(0, 200, 0, 50)
+CloneResetToStop.Font = Enum.Font.SourceSans
+CloneResetToStop.Text = "Clone  (Reset To Stop)"
+CloneResetToStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloneResetToStop.TextSize = 14.000
+CloneResetToStop.MouseButton1Down:Connect(function()
+	local Victim='Player Name Here'
+	local A=Instance.new'Animation'
+	A.AnimationId='rbxassetid://215384594'
+	local P=game:GetService'Players'.LocalPlayer
+	local C=P.Character or P.CharacterAdded:Wait()
+	local H=C:WaitForChild'Humanoid':LoadAnimation(A)
+	H:Play()
+	H:AdjustSpeed(100)
+	game:GetService'RunService'.Stepped:Connect(function()
+		C:WaitForChild'HumanoidRootPart'.CFrame=CFrame.new(game:GetService'Players':FindFirstChild(Victim).Character:WaitForChild'HumanoidRootPart'.Position)
+	end)
+end)
+
+UICorner_21.Parent = CloneResetToStop
+
+HeadThrowResetToStop.Name = "Head-Throw  (Reset To Stop)"
+HeadThrowResetToStop.Parent = Buttons
+HeadThrowResetToStop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HeadThrowResetToStop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HeadThrowResetToStop.BorderSizePixel = 0
+HeadThrowResetToStop.Position = UDim2.new(0.176610321, 0, 0.517614424, 0)
+HeadThrowResetToStop.Size = UDim2.new(0, 200, 0, 50)
+HeadThrowResetToStop.Font = Enum.Font.SourceSans
+HeadThrowResetToStop.Text = "Head-Throw  (Reset To Stop)"
+HeadThrowResetToStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+HeadThrowResetToStop.TextSize = 14.000
+HeadThrowResetToStop.MouseButton1Down:Connect(function()
+	AnimationId = "35154961"
+	local Anim = Instance.new("Animation")
+	Anim.AnimationId = "rbxassetid://"..AnimationId
+	local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+	k:Play(0)
+	k:AdjustSpeed(1)
+end)
+
+
+UICorner_22.Parent = HeadThrowResetToStop
+
+RevizAdminResetToStop.Name = "Reviz Admin  (Reset To Stop)"
+RevizAdminResetToStop.Parent = Buttons
+RevizAdminResetToStop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RevizAdminResetToStop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdminResetToStop.BorderSizePixel = 0
+RevizAdminResetToStop.Position = UDim2.new(0.193607494, 0, 0.585754633, 0)
+RevizAdminResetToStop.Size = UDim2.new(0, 200, 0, 50)
+RevizAdminResetToStop.Font = Enum.Font.SourceSans
+RevizAdminResetToStop.Text = "Reviz Admin  (Reset To Stop)"
+RevizAdminResetToStop.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdminResetToStop.TextSize = 14.000
+RevizAdminResetToStop.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ArceusXEditsOfficial/Reviz/main/R"))()
+end)
+
+UICorner_23.Parent = RevizAdminResetToStop
+
+Elements.Name = "Elements"
+Elements.Parent = Mainscript
+
+Credits.Name = "Credits"
+Credits.Parent = Elements
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(-0.0169971678, 0, 0.979879916, 0)
+Credits.Size = UDim2.new(0, 341, 0, 16)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Ui Credits- ASXE   Keysystem Credits- IAN"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230))}
+UIGradient.Parent = Elements
+
+Title.Name = "Title"
+Title.Parent = Mainscript
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.016936304, 0, -0.00113305077, 0)
+Title.Size = UDim2.new(0, 329, 0, 35)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "[Universal, PC]  Bloxxy Animations Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_24.Parent = Title
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(147, 147, 147)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(147, 147, 147))}
+UIGradient_2.Parent = Title
+
+KeybindInfo.Name = "Keybind Info"
+KeybindInfo.Parent = Mainscript
+KeybindInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeybindInfo.BackgroundTransparency = 1.000
+KeybindInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeybindInfo.BorderSizePixel = 0
+KeybindInfo.Position = UDim2.new(0.0814904049, 0, 0.0128638176, 0)
+KeybindInfo.Size = UDim2.new(0, 295, 0, 23)
+KeybindInfo.Font = Enum.Font.SourceSansBold
+KeybindInfo.Text = "Keybind- LeftCtrl/RightCtrl"
+KeybindInfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeybindInfo.TextScaled = true
+KeybindInfo.TextSize = 14.000
+KeybindInfo.TextWrapped = true
+
+Normo.Name = "Normo"
+Normo.Parent = Mainscript
+Normo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Normo.BackgroundTransparency = 111.000
+Normo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Normo.BorderSizePixel = 0
+Normo.Position = UDim2.new(0.0408141911, 0, 0.565808237, 0)
+Normo.Size = UDim2.new(0, 294, 0, 36)
+Normo.Font = Enum.Font.Unknown
+Normo.Text = "{Admin Scripts}"
+Normo.TextColor3 = Color3.fromRGB(0, 0, 0)
+Normo.TextScaled = true
+Normo.TextSize = 14.000
+Normo.TextWrapped = true
+
+Elements_2.Name = "Elements"
+Elements_2.Parent = Frame
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(206, 206, 206)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(206, 206, 206))}
+UIGradient_3.Parent = Elements_2
+
+UICorner_25.Parent = Elements_2
+
+UICorner_26.CornerRadius = UDim.new(0, 30)
+UICorner_26.Parent = Frame
+
+-- Scripts:
+
+local function YFWSDN_fake_script() -- BarrelRollResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', BarrelRollResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(YFWSDN_fake_script)()
+local function BWFN_fake_script() -- BowDownResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', BowDownResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(BWFN_fake_script)()
+local function COFG_fake_script() -- CrawlResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', CrawlResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(COFG_fake_script)()
+local function TUUZFEH_fake_script() -- CrouchResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', CrouchResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(TUUZFEH_fake_script)()
+local function WRGEY_fake_script() -- DabResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', DabResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(WRGEY_fake_script)()
+local function YUXJAIF_fake_script() -- FaintResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', FaintResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(YUXJAIF_fake_script)()
+local function MMKV_fake_script() -- FloatingHeadResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', FloatingHeadResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(MMKV_fake_script)()
+local function UYQV_fake_script() -- FloatingSitResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', FloatingSitResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(UYQV_fake_script)()
+local function WRPF_fake_script() -- HappyDanceResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', HappyDanceResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(WRPF_fake_script)()
+local function QEYZEVW_fake_script() -- InsaneResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', InsaneResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(QEYZEVW_fake_script)()
+local function BVTYXO_fake_script() -- ArmsOutResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', ArmsOutResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(BVTYXO_fake_script)()
+local function YFSHH_fake_script() -- LevitateResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', LevitateResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(YFSHH_fake_script)()
+local function LUYB_fake_script() -- MoonDanceResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', MoonDanceResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(LUYB_fake_script)()
+local function ACGAP_fake_script() -- MovingDanceResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', MovingDanceResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(ACGAP_fake_script)()
+local function BQMP_fake_script() -- PunchResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', PunchResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(BQMP_fake_script)()
+local function QXAHD_fake_script() -- SlapResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', SlapResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(QXAHD_fake_script)()
+local function SWKCN_fake_script() -- SpinAttackResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', SpinAttackResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(SWKCN_fake_script)()
+local function TUSONH_fake_script() -- SpinDanceResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', SpinDanceResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(TUSONH_fake_script)()
+local function DLLSZ_fake_script() -- SpinResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', SpinResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(DLLSZ_fake_script)()
+local function YMCJY_fake_script() -- InvisibleResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', InvisibleResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(YMCJY_fake_script)()
+local function WANPCY_fake_script() -- CloneResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', CloneResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(WANPCY_fake_script)()
+local function KRZXI_fake_script() -- HeadThrowResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', HeadThrowResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(KRZXI_fake_script)()
+local function UQBM_fake_script() -- RevizAdminResetToStop.Rainbow 
+	local script = Instance.new('LocalScript', RevizAdminResetToStop)
+
+	local textButton = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 4
+	
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textButton.BackgroundColor3 = Color3.new(r, g, b)
+	end)
+	
+end
+coroutine.wrap(UQBM_fake_script)()
+local function CGOV_fake_script() -- Title.Rainbow 
+	local script = Instance.new('LocalScript', Title)
+
+	local textLabel = script.Parent
+	local RunService = game:GetService("RunService")
+	
+	-- Function to convert HSV to RGB
+	local function HSVToRGB(h, s, v)
+		local r, g, b
+	
+		local i = math.floor(h * 6)
+		local f = h * 6 - i
+		local p = v * (1 - s)
+		local q = v * (1 - f * s)
+		local t = v * (1 - (1 - f) * s)
+	
+		i = i % 6
+	
+		if i == 0 then r, g, b = v, t, p
+		elseif i == 1 then r, g, b = q, v, p
+		elseif i == 2 then r, g, b = p, v, t
+		elseif i == 3 then r, g, b = p, q, v
+		elseif i == 4 then r, g, b = t, p, v
+		elseif i == 5 then r, g, b = v, p, q
+		end
+	
+		return r, g, b
+	end
+	
+	local hue = 0
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		hue = hue + deltaTime / 9
+		if hue > 1 then
+			hue = hue - 1
+		end
+	
+		local r, g, b = HSVToRGB(hue, 1, 1)
+		textLabel.TextColor3 = Color3.new(r, g, b)
+	end)
+	
+	
+end
+coroutine.wrap(CGOV_fake_script)()
+local function ZCBOL_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local function lerp(a, b, t)
+		return a + (b - a) * t
+	end
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		local newPos = UDim2.new(
+			startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y
+		)
+	
+		frame:TweenPosition(newPos, Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.1, true)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+	
+	
+end
+coroutine.wrap(ZCBOL_fake_script)()
+local function PFQNNLL_fake_script() -- BloxxyAnimationsHub.Keybind 
+	local script = Instance.new('LocalScript', BloxxyAnimationsHub)
+
+	--[[ idk why did i use chatgpt do do this shit but i did use chatgpt..
+	alr     starts
+	]]
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Reference to the ScreenGui
+	local screenGui = script.Parent
+	
+	-- The keys that will be used to toggle the GUI
+	local toggleKey1 = Enum.KeyCode.LeftControl
+	local toggleKey2 = Enum.KeyCode.RightControl
+	
+	-- Function to toggle the GUI visibility
+	local function toggleGui()
+		screenGui.Enabled = not screenGui.Enabled
+	end
+	
+	-- Event listener for key press
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		-- Check if the input is either of the toggle keys and not processed by the game (e.g., chatting)
+		if (input.KeyCode == toggleKey1 or input.KeyCode == toggleKey2) and not gameProcessed then
+			toggleGui()
+		end
+	end)
+	
+end
+coroutine.wrap(PFQNNLL_fake_script)()
